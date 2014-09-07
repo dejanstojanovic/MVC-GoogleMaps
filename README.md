@@ -14,7 +14,7 @@ The library provides:
 ###How to add to a page
 HtmlHelper for GoogleMap can be easily added as any other HtmlHelper in ASP.NET MVC. 
 ```razor
-@Html.GoogleMap
+@Html.GoogleMapEditor("HiddenTreasureMap", new Mvc.GoogleMaps.Models.Map() { editMode=true})
 ```
 However, you will have to add reference to a javascript, jquery and css files manualy in your page. You can referenci them from CDN or from local file system.
 ```html
