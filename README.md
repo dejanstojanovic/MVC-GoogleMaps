@@ -23,3 +23,4 @@ However, you will have to add reference to a javascript, jquery and css files ma
 <script type="text/javascript" src="../src/jquery.googlemaps.js"></script>
 ```
 This library is available as a NuGet package as well, so you van add it to your project through NuGet package manager or console.
+[![ScreenShot](http://dejanstojanovic.net/media/23565/nuget-small.png)](https://www.nuget.org/packages/JQuery.GoogleMaps/)
