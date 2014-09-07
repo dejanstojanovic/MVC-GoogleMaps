@@ -60,11 +60,10 @@ namespace Mvc.GoogleMaps
                     hiddenValueControl.ID = id;
                     divWrapperControl.Controls.Add(hiddenValueControl);
 
-                    JavaScriptSerializer serializer = new JavaScriptSerializer();
                     HtmlGenericControl scriptControl = new HtmlGenericControl("script");
                     scriptControl.Attributes.Add("type", "text/javascript");
                     scriptControl.InnerHtml = string.Format(@"$(document).ready(function(){{
-                                                    $('#map-{0}').GoogleMapEditor($.extend({{}},{1},{{dataChange:function(sender, data){{ $(sender.container).next().next().val(data); }}}}));}});", id, serializer.Serialize(map));
+                                                    $('#map-{0}').GoogleMapEditor($.extend({{}},{1},{{dataChange:function(sender, data){{ $(sender.container).next().next().val(data); }}}}));}});", id, map.ToJsonString());
                     divWrapperControl.Controls.Add(scriptControl);
                     divWrapperControl.RenderControl(htmlWriter);
                     sbControlHtml.Append(stringWriter.ToString());
