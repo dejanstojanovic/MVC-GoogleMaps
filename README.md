@@ -25,3 +25,14 @@ However, you will have to add reference to a javascript, jquery and css files ma
 This library is available as a NuGet package as well, so you van add it to your project through NuGet package manager or console.
 
 [![ScreenShot](http://dejanstojanovic.net/media/23565/nuget-small.png)](https://www.nuget.org/packages/JQuery.GoogleMaps/)
+
+Since jQuery.GoogleMaps plugin is available from CDN you can even instantiate it on your page with resources from jsdelivr CDN
+```razor
+@Html.GoogleMapEditor("test", new Mvc.GoogleMaps.Models.Map()
+           {
+               editMode = true,
+               stylesPath = "//cdn.jsdelivr.net/jquery.googlemaps/2.2.4/styles.json",
+               markerPinsPath = "//cdn.jsdelivr.net/jquery.googlemaps/2.2.4/img",
+               editTemplatesPath = "//cdn.jsdelivr.net/jquery.googlemaps/2.2.4/html"
+           })
+```
