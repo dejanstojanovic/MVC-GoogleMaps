@@ -18,9 +18,9 @@ HtmlHelper for GoogleMap can be easily added as any other HtmlHelper in ASP.NET 
 ```
 However, you will have to add reference to a javascript, jquery and css files manualy in your page. You can referenci them from CDN or from local file system.
 ```html
-<link rel="stylesheet" type="text/css" href="../src/css/mapstyle.css" />
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.googlemaps/2.2.4/css/mapstyle.min.css" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="../src/jquery.googlemaps.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.googlemaps/2.2.4/jquery.googlemaps.min.js"></script>
 ```
 This library is available as a NuGet package as well, so you van add it to your project through NuGet package manager or console.
 
