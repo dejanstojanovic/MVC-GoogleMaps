@@ -11,6 +11,8 @@ The library provides:
 * Model POCO classes
 * Extension methods for serializing and deserializing map model
  
+![ScreenShot](http://dejanstojanovic.net/media/31659/googlemap-editor.png)
+
 ###How to add to a page
 HtmlHelper for GoogleMap can be easily added as any other HtmlHelper in ASP.NET MVC. 
 ```razor
