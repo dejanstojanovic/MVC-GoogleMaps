@@ -26,7 +26,7 @@ However, you will have to add reference to a javascript, jquery and css files ma
 ```
 This library is available as a NuGet package as well, so you van add it to your project through NuGet package manager or console.
 
-[![ScreenShot](http://dejanstojanovic.net/media/23565/nuget-small.png)](https://www.nuget.org/packages/JQuery.GoogleMaps/)
+[![ScreenShot](http://dejanstojanovic.net/media/23565/nuget-small.png)](https://www.nuget.org/packages/MVC.GoogleMaps/)
 
 Since jQuery.GoogleMaps plugin is available from CDN you can even instantiate it on your page with resources from jsdelivr CDN
 ```razor
